@@ -2,21 +2,525 @@
  *
  * All scss here
  */
+/* line 6, /Users/gkoscevic/sites/2017itafedora/boilerplate/assets/src/scss/main.scss */
+html, body, div, span, object, iframe,
+	h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+	abbr, address, cite, code,
+	del, dfn, em, img, ins, kbd, q, samp,
+	small, strong, sub, sup, var,
+	b, i,
+	dl, dt, dd, ol, ul, li,
+	fieldset, form, label, legend,
+	table, caption, tbody, tfoot, thead, tr, th, td,
+	article, aside, canvas, details, figcaption, figure, 
+	footer, header, hgroup, menu, nav, section, summary,
+	time, mark, audio, video {
+	    margin:0;
+	    padding:0;
+	    border:0;
+	    box-sizing: border-box;
+	    outline:0;
+	    font-size:100%;
+	    vertical-align:baseline;
+	    background:transparent;
+	}
+
+	body {
+	    line-height:1;
+	}
+
+	article,aside,details,figcaption,figure,
+	footer,header,hgroup,menu,nav,section { 
+	    display:block;
+	}
+
+	nav ul {
+	    list-style:none;
+	}
+
+	blockquote, q {
+	    quotes:none;
+	}
+
+	blockquote:before, blockquote:after,
+	q:before, q:after {
+	    content:'';
+	    content:none;
+	}
+
+	a {
+	    margin:0;
+	    padding:0;
+	    font-size:100%;
+	    vertical-align:baseline;
+	    background:transparent;
+	}
+
+	/* change colours to suit your needs */
+	ins {
+	    background-color:#ff9;
+	    color:#000;
+	    text-decoration:none;
+	}
+
+	/* change colours to suit your needs */
+	mark {
+	    background-color:#ff9;
+	    color:#000; 
+	    font-style:italic;
+	    font-weight:bold;
+	}
+
+	del {
+	    text-decoration: line-through;
+	}
+
+	abbr[title], dfn[title] {
+	    border-bottom:1px dotted;
+	    cursor:help;
+	}
+
+	table {
+	    border-collapse:collapse;
+	    border-spacing:0;
+	}
+
+	/* change border colour to suit your needs */
+	hr {
+	    display:block;
+	    height:1px;
+	    border:0;   
+	    border-top:1px solid #cccccc;
+	    margin:1em 0;
+	    padding:0;
+	}
+
+	input, select {
+	    vertical-align:middle;
+	}
+/****  END RESET *****/
+
+
 
 body {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   color: #2c3e50;
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  margin: 0;
-}
+  margin: 0; }
 
+/* line 14, /Users/gkoscevic/sites/2017itafedora/boilerplate/assets/src/scss/main.scss */
 main {
   margin: 40px auto 0;
-  max-width: 960px;
-  text-align: center;
+/*  max-width: 960px;
+*/  text-align: center; }
+
+/* line 20, /Users/gkoscevic/sites/2017itafedora/boilerplate/assets/src/scss/main.scss */
+/*img {
+  max-width: 100%; }*/
+
+ul {
+  list-style-type: none;
+}
+.clearfix{
+	clear: both;
+}
+.container{
+margin: 0 auto;
+max-width: 1140px;
 }
 
-img {
-  max-width: 100%;
+.header{
+	top: 0;
 }
+
+.header-logo{
+	float: left;
+	font-weight: normal;
+	font-size: 25px;
+}
+
+.header-menu li,
+.footer-menu li{
+	display: inline-block;
+	margin: auto;
+	font-family: 'Josefin Sans';
+	float: right;
+	font-weight: bold;
+	padding-right: 50px;
+	font-size: 13px;
+	text-transform: uppercase;
+}
+
+.menu-items{
+	text-align: right;
+	color: 	#3B4045;
+	background-color: red;
+	font-family: "Josefin Sans";
+
+}
+
+.container-one{
+	padding-top: 75px;
+}
+
+.watch-one{
+	display: block;
+	width: 	50px;
+	float: right;
+}
+
+.section-one{
+	float: right;
+	width: 700px;
+	padding-top: 50px;
+	padding-left: 100px;
+	text-align: left;
+	font-family: 'Josefin Sans';
+	padding-bottom: 200px;
+}
+
+.watch1{
+		padding-left: 20px;
+
+}
+
+.section-one h1{
+	font-size: 60px;
+	font-weight: bold;	
+	font-family: 'Josefin Sans'
+
+}
+.section-one p{
+	font-size: 55px;
+	font-weight: normal;
+	font-size: 20px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+
+}
+
+.section-two h2{
+	font-family: 'Josefin Sans';
+	font-size: 40px;
+	font-weight: bold;
+	color: black;
+	padding-bottom: 70px;
+
+}
+/*.section-two{
+background: url(.../node_moduleswatch2.svg);
+overflow: auto
+}*/
+
+.buy-button{
+	background-color: #FEB648;
+	padding: 16px 32px;
+	color: white;
+	font-size: 20px;
+	font-family: 'Josefin Sans';
+	font-weight: 300;
+	border-radius: 100px;
+	border: none;	
+	box-shadow: 1px 5px 20px 0px #FEB648;
+}
+
+/*.core-column-one{
+	text-align: left;
+}*/
+
+.section-two{
+	padding-bottom: 120px;
+}
+
+.core-columns i {
+	display: inline-block;
+    margin-bottom: 7px;
+    font-size: 40px;
+}
+
+.core-columns li{
+	padding-bottom: 30px;
+}
+
+.watch-two{
+	width: 240px;
+}
+
+.core-columns p{
+	line-height: 22px;
+}
+
+.core-column-one, .core-column-two,  .core-column-three{
+	float: left;
+}
+
+.core-column-one, .core-column-two, .core-column-three{
+	text-align: left;
+	width: 33.333333333%;
+}
+
+.core-column-one h3,
+.core-column-three h3{
+	font-size: 20px;
+	line-height: 25px;
+}
+
+
+.section-primary{
+	background-color: #FDA920;
+	overflow: hidden;
+}
+
+.watch-three {
+	float: left;
+	width: 35%;
+	padding-top: 100px;
+	padding-bottom: 125px;
+}
+
+.section-three{
+	float: left;
+	width: 60%;
+	padding-top: 100px;
+	padding-bottom: 125px;
+	padding-top: 180px;
+}
+
+.section-three{
+	text-align: left;
+}
+
+.section-three h1{
+	font-family: 'Josefin Sans';
+	font-weight: 600;
+	color: white;
+	font-size: 40px;
+	line-height: 48px;
+	padding-bottom: 25px;
+}
+
+.section-three p{
+	font-family: 'Josefin Sans';
+	font-weight: 300;
+	color: white;
+	font-size: 18px;
+	line-height: 22px;
+}
+
+
+
+.watch-four{
+	float: left;
+	width: 50%;
+}
+
+.section-four{
+	float: left;
+	width: 50%;
+	text-align: left;
+	padding-top: 100px;
+}
+
+.section-four-heading{
+	padding-top: 100px;
+	padding-bottom: 100px;
+	font-family: 'Josefin Sans';
+	font-size: 40px;
+	font-weight: 600;
+}
+
+.section-four h1{
+	font-family: 'Josefin Sans';
+	font-size: 32px;
+	line-height: 38px;
+}
+
+.section-four p{
+	font-family: 'Josefin Sans';
+	font-size: 18px;
+	line-height: 22px;
+	padding-top: 20px;
+}
+
+.check-features-button{
+	background-color: #FEB648;
+	padding: 8px 44px;
+	color: white;
+	font-size: 16px;
+	font-family: 'Josefin Sans';
+	font-weight: 300;
+	border-radius: 100px;
+	border: none;	
+	box-shadow: 1px 5px 20px 0px #FEB648;
+}
+
+.watch-five{
+	float: left;
+	width: 50%;
+}
+
+.section-five{
+	float: left;
+	width: 50%;
+	text-align: left;
+	padding-top: 120px;
+}
+
+.section-five p{
+	font-family: 'Josefin Sans';
+	font-size: 18px;
+	line-height: 22px;
+	padding-top: 20px;
+}
+
+.section-five h1{
+	font-family: 'Josefin Sans';
+	font-size: 32px;
+	line-height: 38px;
+}
+
+
+.section-six{
+	padding-top: 100px;
+}
+
+.section-six h1{
+	font-family: 'Josefin Sans';
+	font-size: 40px;
+	line-height: 48px;
+}
+
+
+.input{
+	width: 100%;
+    height: 42px;
+    box-sizing: border-box;
+    padding-right: 80px;
+    border-radius: 100px;
+    border: 1px solid gray;
+    padding-left: 1rem;
+}
+
+.section-six-watch{
+	float: left;
+	width: 25%;
+	padding-top: 50px;
+	padding-bottom: 100px;
+}
+
+.section-seven{
+	background: url('subscription.jpg');
+	overflow: hidden; 
+}
+
+.section-seven {
+	h1{
+		font-family: 'Josefin Sans';
+		font-size: 31px;
+		font-weight: 400;
+		line-height: 37px;
+	}
+
+	p{
+		font-family: 'Josefin Sans';
+		font-size: 18px;
+		font-weight: 400;
+		line-height: 22px;
+		padding-bottom: 20px;
+	    padding-top: 10px;
+	}
+}
+
+
+
+.submit{
+	position: absolute;
+    right: 0;
+    top: 0;
+    height: 42px;
+    border: none;
+    background: #FEB341;
+    width: 140px;
+    border-radius: 0 100px 100px 0;
+    color: white;
+}
+
+.input-wrapper{
+	display: inline-block;
+    width: 480px;
+    position: relative;
+    margin-bottom: 100px;
+}
+
+.watch-review{
+	font-family: 'Josefin Sans';
+	font-weight: 600;
+	font-size: 40px;
+	line-height: 48px;
+}
+
+
+.quote-column-1,
+.quote-column-2,
+.quote-column-3 {
+	float: left;
+	width: 33%;
+	padding-top: 50px;
+	padding-right: 25px;
+	padding-bottom: 75px;
+}
+
+.quote-column-1,
+.quote-column-2,{
+	padding-right: 30px;
+}
+
+.section-eight{
+	padding-bottom: 75px;
+}
+.section-eight i{
+	font-size: 40px;
+	color: #FDA920;
+	line-height: 40px;
+}
+
+.face-photo{
+	width: 46px;
+	height: 46px;
+}
+
+.name{
+	font-family: 'Josefin Sans';
+	font-weight: 600;
+	font-size: 18px;
+	padding-top: 12px;
+	padding-bottom: 4px;
+}
+
+.CEO{
+	font-weight: 150;
+	font-family: 'Josefin Sans';
+	font-size: 14px;
+	color: black;
+}
+
+.section-eight p{
+	font-family: 'Lora';
+	font-style: italic;
+	font-size: 14px;
+	color: #777777;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	line-height: 23px;
+}
+
+.mastfoot{
+	background-color: #DED9D9;
+	overflow: hidden;	
+}
+
+.footer-vex {
+	text-align: inline;
+}
+
